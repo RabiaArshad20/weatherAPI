@@ -1,5 +1,5 @@
 const request = require('request')
-const API_SERVICE = function (){
+const weatherservice = function (){
     // Request URL
 var url = 'https://samples.openweathermap.org/data/2.5/forecast?q=australia,DE&appid=e0702aab87076bf923c2d77d6fd1d824';
 
@@ -14,4 +14,6 @@ request(url, (error, response, body)=>{
     }
 });
 }
-module.exports = API_SERVICE ;
+module.exports = {
+    weatherservice
+}
